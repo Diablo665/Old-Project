@@ -1,0 +1,254 @@
+.main{
+    float:right;
+    margin-left:10px;
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: 70px;
+  
+  }
+  .profile-card{
+    background: linear-gradient(to left, #336677 0%, #7e174a 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 30px;
+    border: 1px solid #ffffff40;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  }
+  
+  
+  .profile-card ion-icon{
+    color: #2aa3cc;
+    font-size: 36px;
+    margin: 0px;
+  }
+  
+  .profile-card .moreInfo{
+    display:none;
+    min-height: 50px;
+  }
+  
+  
+  .profile-card .image{
+    position:relative;
+    height: 150px;
+    width: 150px;
+  }
+  .profile-card .image .profile-pic{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  }
+  .data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .data h2{
+    font-size: 33px;
+    font-weight: 600;
+  }
+  span{
+    font-size: 18px;
+  }
+  .row{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .row .info{
+    text-align: center;
+    padding: 0 20px;
+  }
+  .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .buttons .btn{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 8px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    white-space: nowrap;
+    background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
+  }
+  .buttons .btn:hover{
+    box-shadow: inset 0 5px 20px rgba(0,0,0,0.4);
+  }
+
+  .postPlase{
+    background: #5a5a5a85;
+    border-radius: 25px;
+    margin-right: 400px;
+    margin-left: 70px;
+    padding: 10px;
+    max-width: 600px;
+    
+  }
+  
+  .postPlase .contener{
+    margin-top: 10px;
+    width: 100%;
+    background: #676767;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .contener .post-header{
+    background: linear-gradient(to left, #336677 0%, #7e174a 100%);
+    height: 60px;
+    display: flex;
+    border-radius: 14px;
+  }
+
+  .name{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+  }
+
+  .name span{
+    color: #adadad;
+    font-size: 18px;
+  }
+
+  .name .time{
+    color: #1d1d1d;
+    margin: 0 10px;
+  }
+
+  .name ion-icon{
+    align-self: center;
+    font-size: 24px;
+  }
+
+  .content-type{
+    font-family:sans-serif;
+    opacity: 0.5;
+    text-decoration: blink;
+    
+  }
+
+  .post-header-image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin:5px
+  }
+
+  .contener .post-content{
+    width: 100%;
+    border-radius: 10px;
+
+  }
+
+.contener .post-content{
+    width: 100%;
+    border-radius: 10px;
+
+  }
+
+  .post-content .post-content-text{
+    max-height: 50px;
+    overflow:hidden;
+  }
+
+  .post-content .post-content-image{
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    max-height: 460px;
+  } 
+
+  .post-content-image .col1{
+    flex: 65%;
+    max-height: 250px;
+  }
+  .post-content-image .col2{
+    flex: 35%;
+    max-height: 200px;
+  }
+
+  .col1, .col2{
+    display:flex;
+    justify-content: space-around;
+    overflow: hidden;
+  }
+
+  .col1 img, .col2 img{
+    width: 100%;
+
+  }
+
+  .add-post{
+    max-width:600px;
+    margin-left: 70px;
+    margin-right: 400px;
+    height: auto;
+    display: none;
+    background: #6a6a6a45;
+    border-radius: 10px;
+    margin-bottom:5px;
+
+  }
+
+  .add-post .post-added-text{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .post-added-text textarea{
+    display: block;
+	  width: 500px;
+	  box-sizing: border-box;
+	  margin: 0 0 5px 0;
+	  padding: 10px;
+	  border: none;
+	  background-color: #d5d5d582;
+	  min-height: 54px;
+	  font-size: 14px; 
+	  line-height: 1.2;
+    border-radius:10px;
+    resize: none;
+}
+
+  .post-added-text textarea:focus{
+    outline: 1px none transparent;
+    border-bottom: 2px solid grey;
+  }
+
+  .post-added-bt{
+    height: 25px;
+    align-self: top;
+    font-size:25px;
+    cursor:pointer;
+    
+  }
+
+  a.button-add {
+    display: inline-block;
+    font-size:12px;
+    color: #c3c3c3;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+    transition: 0.2s;
+  } 
+  a.button-add:hover { background: rgba(255,255,255,.2); }
+  a.button-add:active { background: white; }

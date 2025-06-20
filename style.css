@@ -1,0 +1,457 @@
+/* меню регистрации*/
+
+body{
+  background: linear-gradient(to right, #244d5b 0%, #64163d 100%);
+  background-size: 100% 100%;
+
+}
+
+.disable{
+  color:rgb(226, 52, 39);
+}
+
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:25px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#57428b33;
+border-right:#605c5c 1px solid;
+position:fixed;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+--webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+font-size:25px;
+border-radius:15px 0px 0px 15px;
+}
+
+.main-menu>ul {
+margin:60px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color: #03eaef96;
+font-family: arial;
+font-size: 15px;
+text-decoration:none;
+--webkit-transform:translateZ(0) scale(1,1);
+--webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#000000;
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(https://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+.entry_menu{
+  float: right;
+  width: 300px;
+  height: 280px;
+  background-color: #504f66;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.75;
+  margin: 0 150px;
+}
+/*нижнее пространство с информацией */
+.floy{
+  background-color: #4f4c91;
+  opacity: 0.75;
+  font-size: 20;
+}
+
+/*Верхний титул */
+.top_inf{
+  height: 50px;
+  width: 100%;
+  background-color: #949396;
+  opacity: 0.5;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+}
+
+/*Стиль верхнего логотипа */
+.logotip_icon_position{
+  padding-top: 5px; 
+  margin-left: 100px;
+}
+
+/* вход и регистрация */
+.entry_input{
+  width: 180px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #9f9fa6;
+}
+
+/* меню регстрации*/
+.request_menu{
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.75;
+  background-color: #504f66;
+  margin: 0 150px;
+}
+
+/*кнопки входа */
+.buttom_v{
+  border: 0;
+  border-radius: 5px;
+  height:30px;
+  background-color: black;
+  opacity: 1;
+  color: #fff;
+  margin: 5px;
+  font-size: 25px;
+  text-align: center;
+
+}
+/*Ошибка регистрации и входа*/
+.errorr{
+  color: #f00;
+  opacity: 0.5;
+  font-size: 16px;
+  text-align: center;
+
+}
+
+.request{
+  border-radius: 5px;
+  
+}
+
+.center_p{
+  background-color: #21212182;
+  margin-left: 60px;
+  margin-right: 200px;
+  min-height: 300px;
+  color: #fff;
+  
+}
+
+.right-panel{
+  position:absolute;
+  top:60px;
+  right:0;
+  padding: 5px;
+  min-width: 200px;
+  background-color: #21212182;
+  height: 300px;
+  color: rgb(226, 52, 39);
+  border-radius:0px 10px 10px 0px;
+  border-left:#605c5c 1px solid;
+}
+
+.buttonForAddInformation{
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  background-color: #2426a879;
+  border-radius: 5px;
+  border-color: #2e2b2b;
+}
+
+.buttonForAddInformation:hover{
+  color: #000;
+}
+
+.AddNewPostMenu{
+  width: 100%;
+  height: 150px;
+  text-align: center;
+}
+
+
+.EditMenu{
+  background-color: #03080a;
+  color: rgb(34, 184, 204);
+  font-size: 16px;
+}
+
+.back_prost{
+  width:100%;
+}
+
+.back_prost h2{
+  width: 100%;
+  color: #45f3ff;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.back_prost .row100{
+  position: relative;
+  width: 100%;
+  display: grid;
+
+}
+
+.back_prost .row100 .col{
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 20px 0 10px;
+  transition: 0.5s;
+}
+
+.back_prost .row100 .inputBox{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #45f3ff;
+}
+
+.back_prost .row100 .inputBox input{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding:  0 10px;
+  z-index: 1;
+  color: #000;
+}
+
+.back_prost .row100 .inputBox .text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.back_prost .row100 .inputBox input:focus + .text,
+.back_prost .row100 .inputBox input:valid + .text{
+  top: -35px;
+  left: -10px;
+}
+
+.back_prost .row100 .inputBox .line{
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #45f3ff;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+   
+}
+
+.back_prost .row100 .inputBox input:focus ~ .line,
+.back_prost .row100 .inputBox input:valid ~ .line{
+  height: 100%;
+
+}
+
+.row100 .inputBox input[type = 'submit']{
+  border: none;
+  width: 150px;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #45f3ff;
+  color: #000;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+
+.DolgnoRabotatNoNeYweren{
+  background-color: #3333;
+  width: auto;
+  height: auto;
+  border-radius: 555px;
+  font-weight: 549;
+  text-align: center;
+  padding: 8px 10px;
+  border: solid 2px #120f0ff5;
+  color: #ffffff;
+  background:#632a78fa;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  text-transform: uppercase;
+}
+
+.DolgnoRabotatNoNeYweren:hover {
+  color: #fff;
+  background: #333;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+}
+
+.preloader {
+  background-color:#333;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+.preloader__loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.top-panel{
+  background: #57428b33;
+  height: 60px;
+  margin-left:60px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom:1px solid #999;
+}
+
+
+.top-panel .info{
+  margin: 10px 10px;
+  display: flex;
+  color: #999;
+}
+
+.top-panel .info ion-icon{
+  color:#03eaefcf;
+}
+
+.top-panel .info i, span{
+  padding: 5px;
+  color:#fff;
+  font-family: monospace;
+
+}
+
+.top-panel .info span{
+  align-items:center;
+}
+
+.top-panel .info .top-image{
+  max-width: 50px;
+  max-height: 50px;
+  overflow: hiden;
+}
+
+.top-panel .info .top-image .top-pic{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

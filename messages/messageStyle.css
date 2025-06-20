@@ -1,0 +1,273 @@
+.chatBox::-webkit-scrollbar{
+    width:0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.leftInformation{
+    float:left;
+    margin-left: 10px;
+    width: 160px;
+    height: 400px;
+    background-color: #000000b7;
+}
+
+.leftInformation .rowInformation{
+    width: 160px;
+    height: 50px;
+
+}
+
+.leftInformation .rowInformation .information{
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Bradley Hand', 'cursive';
+    padding-top: 10px;
+    margin: 20px 0 10px;
+
+}
+
+.leftInformation .rowInformation .information img{
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+.leftInformation .rowInformation .information .line{
+    margin-top: 5px;
+    display: block;
+    align-items: center;
+    width: 150px;
+    height: 2px; 
+    background: #45f3ff;
+    border-radius: 5px; 
+    position: absolute;
+    border: 0;
+}
+
+
+.messageConteine{
+    position: relative;
+    margin-left: 175px;
+    width: calc(100% - 200px);
+    height: calc(100vh - 150px);
+    background: #0000008a;
+    display: flex;
+}
+
+.messageConteine .leftMenu{
+    position: relative;
+    flex: 30%;
+
+}
+
+
+.messageConteine .rightMenu{
+    position: relative;
+    flex: 70%;
+    background: #0000008a;
+}
+
+.image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.chatList{
+    position: relative;
+    height: calc(100vh - 150px);
+    overflow: auto;
+    background: #000000b7;
+}
+
+.chatList .messageBlock{
+    position: relative;
+    width:100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #45f3ff;
+
+}
+
+.chatList .messageBlock:hover{
+    background: #3f6061c5;
+}
+
+.chatList .messageBlock .imageUS{
+    position: relative;
+    min-width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+.rightMenu .messageBlock .imageUS{
+    position: relative;
+    min-width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+
+.chatList .messageBlock .information{
+    position: relative;
+    width: 100%;
+}
+.chatList .messageBlock .information .header{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.chatList .messageBlock .information .header h4{
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #45f3ffc0
+}
+
+.chatList .messageBlock .information .header .time{
+    font-size: 0.75em;
+    color: #45f3ffd7
+}
+
+.message_panel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message_panel p{
+    color: #fff;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    font-size: 0.9em;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.message_panel b{
+    color: #000;
+    background: #fff;
+    min-width:20px;
+    height: 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Messagheader{
+    width: 100%;
+    height: 60px;
+    background: #42414181
+}
+
+.textImg{
+    color:#fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textImg h4{
+    font-weight: 400;
+    line-height: 1.2em;
+    margin-left: 15px;
+}
+
+.textImg h4 span{
+    font-size: 0.8em;
+    color: #555;
+}
+
+
+.chatBox{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 50px;
+    overflow-y: auto;
+
+}
+
+.message{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.message p{
+    position: relative;
+    right: 0;
+    text-align: right;
+    max-width: 65%;
+    padding:12px;
+    background: #30888b;
+    border-radius: 10px;
+}
+
+.message p span{
+    display: block;
+    margin-top: 5px;
+    font-size: 0.85em;
+    opacity: 0.5;
+}
+
+.MyMessage{
+    justify-content: flex-end;
+}
+
+.friendMessage{
+    justify-content: flex-start;
+}
+
+.friendMessage p{
+    background-color: #6d6d6dab;
+}
+
+.chatInput{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding: 15px;
+    background: #3dd8b6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatInput ion-icon{
+    cursor: pointer;
+    font-size: 1.8em;
+    color: #555;
+}
+
+.chatInput input{
+    position: relative;
+    width: 90%;
+    margin: 0 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    border-radius: 30px;
+}
